@@ -1,0 +1,20 @@
+{
+  "name": "sniperphp/code_check",
+  "description": "code check hooks",
+  "type": "scripts",
+  "authors": [
+    {
+      "name": "Wicky",
+      "email": "wickyliao1993@gmail.com"
+    }
+  ],
+  "support": {
+    "wiki": "https://github.com/WickyLeo"
+  },
+  "keywords": [
+    "standards"
+  ],
+  "require": {
+    "squizlabs/php_codesniffer": "3.*"
+  }
+}

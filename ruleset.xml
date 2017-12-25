@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ruleset name="SelfiecityCodeStandard">
+    <description>sniper-php</description>
+    <arg name="extensions" value="php" />
+    <arg name="report" value="full" />
+    <arg name="colors" />
+    <arg value="sp" />
+    <exclude-pattern>*/vendor/*</exclude-pattern>
+    <exclude-pattern>*/tests/*</exclude-pattern>
+    <exclude-pattern>*/data/*</exclude-pattern>
+    <exclude-pattern>*/log/*</exclude-pattern>
+    <exclude-pattern>*/doc/*</exclude-pattern>
+    <exclude-pattern>*/assets/*</exclude-pattern>
+    <rule ref="Generic.PHP.Syntax"/>
+    <rule ref="PSR2" />
+    <rule ref="Zend.NamingConventions.ValidVariableName" >
+        <exclude name="Zend.NamingConventions.ValidVariableName.PrivateNoUnderscore" />
+    </rule>
+    <rule ref="Squiz.Strings.DoubleQuoteUsage" />
+</ruleset>
