@@ -7,20 +7,20 @@ PHP Code pre-commit to git or gitlab,checkout your code style PSR Compliance.
 ```
 {
     "require-dev": {
-        "selfiecity/code_standard":"dev-master"
+        "sniperphp/code_check":"dev-master"
     },
     "repositories": [
         {
             "type": "git",
-            "url": "https://github.com/WickyLeo/codeCheck.git"
+            "url": "https://github.com/WickyLeo/sniperphp"
         }
     ],
     "scripts": {
         "post-install-cmd": [
-            "sh ./vendor/codecheck/code_standard/setup_hooks.sh"
+            "sh ./vendor/sniperphp/code_check/setup_hooks.sh"
         ],
         "post-update-cmd": [
-            "sh ./vendor/codecheck/code_standard/setup_hooks.sh"
+            "sh ./vendor/sniperphp/code_check/setup_hooks.sh"
         ]
     }
 }
